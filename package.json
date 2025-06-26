@@ -1,0 +1,37 @@
+{
+  "name": "rabbitmq-node-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prisma:gen": "prisma generate",
+    "prisma:push": "prisma db push",
+    "dev:producer": "ts-node-dev --respawn src/producer.ts",
+    "dev:consumer": "ts-node-dev --respawn src/consumer.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donotfeedthevirus/rabbitmq-node-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/donotfeedthevirus/rabbitmq-node-test/issues"
+  },
+  "homepage": "https://github.com/donotfeedthevirus/rabbitmq-node-test#readme",
+  "dependencies": {
+    "@prisma/client": "^6.10.1",
+    "amqplib": "^0.10.8",
+    "dotenv": "^16.5.0"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.10.7",
+    "@types/node": "^24.0.4",
+    "prisma": "^6.10.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  }
+}
